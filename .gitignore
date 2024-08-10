@@ -1,0 +1,8 @@
+# Conda
+.Conda
+
+# MacOS
+.DS_Store
+
+# Cache
+.cache
