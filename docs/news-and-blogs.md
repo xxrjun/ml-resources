@@ -1,6 +1,13 @@
 # News and Blogs
 
+## 📰 News
+
+- [**AI News**](https://buttondown.com/ainews) (Free to subscribe 📧) - They summarize top AI discords + AI reddits + AI X/Twitters, and send you a roundup each day!
+
 - [**Anthropic's News**](https://www.anthropic.com/news)
+
+## 🌐 Blog
+
 
 - [**OpenAI's Blog**](https://www.openai.com/blog/)
 

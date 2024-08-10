@@ -10,6 +10,10 @@
 
 - [**mli/paper-reading**](https://github.com/mli/paper-reading)
 
+## 🏫 Courses 
+
+- [**Machine Learning, Hung-yi Lee**](https://speech.ee.ntu.edu.tw/~hylee/ml/2023-spring.php)
+
 ## 📑 Articles
 
 - [**A transformer walk-through, with Gemma**](https://graphcore-research.github.io/posts/gemma/?fbclid=IwZXh0bgNhZW0CMTAAAR25xzOo9UaEyag4YPl7xaqy6VOyROOa3jlFwQGLhhHN-a_tNd26KLhZt4s_aem_AeCtx3uhCQaGlBHe7WXqHqGGTLRZ68pvX8jCYNkbZr5guPB05xBQqQC4S_cpWpkLvkf58_jTQXcx8D6y-dV8s_oF)
