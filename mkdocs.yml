@@ -21,7 +21,7 @@ theme:
         name: Switch to dark mode
   font:
     code: Roboto Mono
-    text: Josefin Sans
+    text: Roboto Slab
   features:
     - content.tabs.link
     - navigation.path
@@ -43,8 +43,11 @@ markdown_extensions:
 
 nav:
   - Home: index.md
-  - App: app.md
+  - Tools: tools.md
+  - Learning Resources: learning-resources.md
+  - News and Blogs: news-and-blogs.md
   - Open Source Models: open-source-models.md
+  - Role Models: role-models.md
  
 
 extra_css:
