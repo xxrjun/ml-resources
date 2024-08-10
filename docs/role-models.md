@@ -1,6 +1,6 @@
 # 👨‍⚖️👩‍⚖️ Role Models
 
-!!! tip "Follow there LinkedIn/Twitter/GitHub/Hugging Face."
+!!! tip "Follow their LinkedIn/Twitter/GitHub/Hugging Face."
 
 | **Name**            | **Description**                                            | **LinkedIn**                                                | **X**                                | **GitHub**                             |
 | ------------------- | ---------------------------------------------------------- | ----------------------------------------------------------- | ------------------------------------ | -------------------------------------- |
