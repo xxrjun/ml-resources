@@ -18,11 +18,15 @@
 
 - [**LLaMA-Factory**](https://github.com/hiyouga/LLaMA-Factory) - A WebUI for Efficient Fine-Tuning of 100+ LLMs (ACL 2024)
 
+## 📍 Demo
+
+- [**Gradio**](https://github.com/gradio-app/gradio) - Build and share delightful machine learning apps, all in Python.
+
 ## 🏹 Inference
 
 - [**Ollama**](https://github.com/ollama/ollama) - Get up and running with large language models.
 
-## 🗡️ Other Tools
+## 🗡️ Others
 
 - [**DeepSpeed**](https://github.com/microsoft/DeepSpeed) - DeepSpeed is a deep learning optimization library that makes distributed training and inference easy, efficient, and effective.
 
