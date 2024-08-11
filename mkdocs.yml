@@ -1,7 +1,7 @@
 site_name: xxrjun/ml-resources
 site_author: xxrjun
 
-repo_name: cs-resources
+repo_name: ml-resources
 repo_url: https://github.com/xxrjun/ml-resources
 edit_uri: edit/main/docs/
 
@@ -64,3 +64,17 @@ plugins:
   - git-committers:
       repository: xxrjun/ml-resources
       branch: main
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/xxrjun
+    - icon: fontawesome/brands/x-twitter
+      link: https://twitter.com/xxrjun
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/leon-tsou/
+    - icon: fontawesome/brands/instagram
+      link: https://www.instagram.com/r._jun/
+    - icon: fontawesome/solid/paper-plane
+      link: mailto:a1094030@g.ncu.edu.tw
+  generator: false
