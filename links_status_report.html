@@ -1,0 +1,155 @@
+
+    <html>
+    <head>
+        <title>Link Status Report</title>
+        
+    <style>
+        body {
+            font-family: 'JetBrains Mono', 'Fira Code', monospace;
+            margin: 0;
+            padding: 20px;
+            background-color: #282a36;
+            color: #f8f8f2;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        h1 {
+            color: #ff79c6;
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 2.5em;
+            text-shadow: 0 0 10px rgba(255,121,198,0.5);
+        }
+        h2 {
+            color: #8be9fd;
+            margin-top: 40px;
+            font-size: 1.8em;
+            border-bottom: 2px solid #6272a4;
+            padding-bottom: 10px;
+        }
+        table {
+            border-collapse: separate;
+            border-spacing: 0;
+            width: 100%;
+            max-width: 1160px; /* Adjusted to account for container padding */
+            margin-bottom: 30px;
+            background-color: #44475a;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            table-layout: fixed;
+        }
+        th, td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid #6272a4;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+        th {
+            background-color: #3c3f58;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #50fa7b;
+        }
+        th:nth-child(1), td:nth-child(1) { width: 30%; } /* Link Text */
+        th:nth-child(2), td:nth-child(2) { width: 10%; } /* Status */
+        th:nth-child(3), td:nth-child(3) { width: 60%; } /* URL */
+        tr:last-child td {
+            border-bottom: none;
+        }
+        tr:hover {
+            background-color: #4f5268;
+        }
+        a {
+            color: #8be9fd;
+            text-decoration: none;
+            transition: color 0.3s ease, text-shadow 0.3s ease;
+        }
+        a:hover {
+            color: #ff79c6;
+            text-shadow: 0 0 5px rgba(255,121,198,0.5);
+        }
+        .status {
+            font-weight: bold;
+            text-align: center;
+        }
+        .success { color: #50fa7b; text-shadow: 0 0 5px rgba(80,250,123,0.5); }
+        .error { color: #ff5555; text-shadow: 0 0 5px rgba(255,85,85,0.5); }
+        .warning { color: #ffb86c; text-shadow: 0 0 5px rgba(255,184,108,0.5); }
+        .summary {
+            background-color: #3c3f58;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        }
+        .summary h3 {
+            color: #ff79c6;
+            margin-top: 0;
+        }
+        .summary ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .summary li {
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .summary .stat-label {
+            color: #8be9fd;
+        }
+        .summary .stat-value {
+            font-weight: bold;
+            padding: 2px 8px;
+            border-radius: 4px;
+            background-color: #44475a;
+        }
+        .timestamp {
+            text-align: center;
+            margin-top: 20px;
+            font-style: italic;
+            color: #6272a4;
+        }
+        .file-path {
+            font-family: 'JetBrains Mono', 'Fira Code', monospace;
+            background-color: #3c3f58;
+            padding: 5px 10px;
+            border-radius: 4px;
+            color: #50fa7b;
+            font-size: 0.9em;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            display: inline-block;
+            max-width: 100%;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+    </style>
+    
+        <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Link Status Report</h1>
+            <div class="summary">
+                <h3>Summary</h3>
+                <ul>
+                    <li><span class="stat-label">Total files scanned:</span> <span class="stat-value">6</span></li>
+                    <li><span class="stat-label">Total links checked:</span> <span class="stat-value">53</span></li>
+                    <li><span class="stat-label">Successful links:</span> <span class="stat-value success">39</span></li>
+                    <li><span class="stat-label">Failed links:</span> <span class="stat-value error">14</span></li>
+                </ul>
+            </div>
+    <h2><span class="file-path">../docs/learning-resources.md</span></h2><table><tr><th>Link Text</th><th class='status'>Status</th><th>URL</th></tr><tr><td>d2l-ai/d2l-en</td><td class='status success'>Good</td><td><a href='https://github.com/d2l-ai/d2l-en' target='_blank'>https://github.com/d2l-ai/d2l-en</a></td></tr><tr><td>d2l-ai/d2l-zh</td><td class='status success'>Good</td><td><a href='https://github.com/d2l-ai/d2l-zh' target='_blank'>https://github.com/d2l-ai/d2l-zh</a></td></tr><tr><td>Huggingface</td><td class='status success'>Good</td><td><a href='https://huggingface.co/' target='_blank'>https://huggingface.co/</a></td></tr><tr><td>GitHub</td><td class='status success'>Good</td><td><a href='https://github.com/huggingface' target='_blank'>https://github.com/huggingface</a></td></tr><tr><td>llya 30u30</td><td class='status success'>Good</td><td><a href='https://arc.net/folder/D0472A20-9C20-4D3F-B145-D2865C0A9FEE' target='_blank'>https://arc.net/folder/D0472A20-9C20-4D3F-B145-D2865C0A9FEE</a></td></tr><tr><td>mli/paper-reading</td><td class='status success'>Good</td><td><a href='https://github.com/mli/paper-reading' target='_blank'>https://github.com/mli/paper-reading</a></td></tr><tr><td>Machine Learning, Hung-yi Lee</td><td class='status success'>Good</td><td><a href='https://speech.ee.ntu.edu.tw/~hylee/ml/2023-spring.php' target='_blank'>https://speech.ee.ntu.edu.tw/~hylee/ml/2023-spring.php</a></td></tr><tr><td>A transformer walk-through, with Gemma</td><td class='status success'>Good</td><td><a href='https://graphcore-research.github.io/posts/gemma/?fbclid=IwZXh0bgNhZW0CMTAAAR25xzOo9UaEyag4YPl7xaqy6VOyROOa3jlFwQGLhhHN-a_tNd26KLhZt4s_aem_AeCtx3uhCQaGlBHe7WXqHqGGTLRZ68pvX8jCYNkbZr5guPB05xBQqQC4S_cpWpkLvkf58_jTQXcx8D6y-dV8s_oF' target='_blank'>https://graphcore-research.github.io/posts/gemma/?fbclid=IwZXh0bgNhZW0CMTAAAR25xzOo9UaEyag4YPl7xaqy6VOyROOa3jlFwQGLhhHN-a_tNd26KLhZt4s_aem_AeCtx3uhCQaGlBHe7WXqHqGGTLRZ68pvX8jCYNkbZr5guPB05xBQqQC4S_cpWpkLvkf58_jTQXcx8D6y-dV8s_oF</a></td></tr><tr><td>Andrej Karpathy</td><td class='status success'>Good</td><td><a href='https://www.youtube.com/@AndrejKarpathy' target='_blank'>https://www.youtube.com/@AndrejKarpathy</a></td></tr><tr><td>老石谈芯 Shilicon Talk</td><td class='status success'>Good</td><td><a href='https://www.youtube.com/@laoshi_tec' target='_blank'>https://www.youtube.com/@laoshi_tec</a></td></tr><tr><td>跟李沐学 AI</td><td class='status success'>Good</td><td><a href='https://www.youtube.com/@mu_li' target='_blank'>https://www.youtube.com/@mu_li</a></td></tr></table><h2><span class="file-path">../docs/index.md</span></h2><table><tr><th>Link Text</th><th class='status'>Status</th><th>URL</th></tr></table><h2><span class="file-path">../docs/tools.md</span></h2><table><tr><th>Link Text</th><th class='status'>Status</th><th>URL</th></tr><tr><td>LMSYS Chatbot Arena Leaderboard</td><td class='status success'>Good</td><td><a href='https://huggingface.co/spaces/lmsys/chatbot-arena-leaderboard' target='_blank'>https://huggingface.co/spaces/lmsys/chatbot-arena-leaderboard</a></td></tr><tr><td>ChatGPT</td><td class='status error'>403</td><td><a href='https://chatgpt.com/' target='_blank'>https://chatgpt.com/</a></td></tr><tr><td>Claude</td><td class='status success'>Good</td><td><a href='https://claude.ai/chat' target='_blank'>https://claude.ai/chat</a></td></tr><tr><td>Perplexity</td><td class='status error'>403</td><td><a href='https://www.perplexity.ai/' target='_blank'>https://www.perplexity.ai/</a></td></tr><tr><td>Weights & Biases</td><td class='status success'>Good</td><td><a href='https://wandb.ai/site' target='_blank'>https://wandb.ai/site</a></td></tr><tr><td>Pytorch</td><td class='status success'>Good</td><td><a href='https://pytorch.org/' target='_blank'>https://pytorch.org/</a></td></tr><tr><td>LLaMA-Factory</td><td class='status success'>Good</td><td><a href='https://github.com/hiyouga/LLaMA-Factory' target='_blank'>https://github.com/hiyouga/LLaMA-Factory</a></td></tr><tr><td>Gradio</td><td class='status success'>Good</td><td><a href='https://github.com/gradio-app/gradio' target='_blank'>https://github.com/gradio-app/gradio</a></td></tr><tr><td>Ollama</td><td class='status success'>Good</td><td><a href='https://github.com/ollama/ollama' target='_blank'>https://github.com/ollama/ollama</a></td></tr><tr><td>DeepSpeed</td><td class='status success'>Good</td><td><a href='https://github.com/microsoft/DeepSpeed' target='_blank'>https://github.com/microsoft/DeepSpeed</a></td></tr><tr><td>vLLM</td><td class='status success'>Good</td><td><a href='https://github.com/vllm-project/vllm' target='_blank'>https://github.com/vllm-project/vllm</a></td></tr><tr><td>UnSloth</td><td class='status success'>Good</td><td><a href='https://github.com/unslothai/unsloth' target='_blank'>https://github.com/unslothai/unsloth</a></td></tr><tr><td>nvtop</td><td class='status success'>Good</td><td><a href='https://github.com/Syllo/nvtop' target='_blank'>https://github.com/Syllo/nvtop</a></td></tr></table><h2><span class="file-path">../docs/role-models.md</span></h2><table><tr><th>Link Text</th><th class='status'>Status</th><th>URL</th></tr><tr><td>🔗</td><td class='status error'>405</td><td><a href='https://www.linkedin.com/in/mulicmu/' target='_blank'>https://www.linkedin.com/in/mulicmu/</a></td></tr><tr><td>🔗</td><td class='status error'>403</td><td><a href='https://x.com/mli65' target='_blank'>https://x.com/mli65</a></td></tr><tr><td>🔗</td><td class='status success'>Good</td><td><a href='https://github.com/mli' target='_blank'>https://github.com/mli</a></td></tr><tr><td>🔗</td><td class='status error'>405</td><td><a href='https://www.linkedin.com/in/danielhanchen/' target='_blank'>https://www.linkedin.com/in/danielhanchen/</a></td></tr><tr><td>🔗</td><td class='status error'>403</td><td><a href='https://x.com/danielhanchen' target='_blank'>https://x.com/danielhanchen</a></td></tr><tr><td>🔗</td><td class='status success'>Good</td><td><a href='https://github.com/danielhanchen' target='_blank'>https://github.com/danielhanchen</a></td></tr><tr><td>🔗</td><td class='status error'>405</td><td><a href='https://www.linkedin.com/in/philipp-schmid-a6a2bb196/' target='_blank'>https://www.linkedin.com/in/philipp-schmid-a6a2bb196/</a></td></tr><tr><td>🔗</td><td class='status error'>403</td><td><a href='https://x.com/_philschmid' target='_blank'>https://x.com/_philschmid</a></td></tr><tr><td>🔗</td><td class='status success'>Good</td><td><a href='https://github.com/philschmid' target='_blank'>https://github.com/philschmid</a></td></tr><tr><td>🔗</td><td class='status error'>405</td><td><a href='https://www.linkedin.com/in/chiphuyen/' target='_blank'>https://www.linkedin.com/in/chiphuyen/</a></td></tr><tr><td>🔗</td><td class='status error'>403</td><td><a href='https://twitter.com/chipro' target='_blank'>https://twitter.com/chipro</a></td></tr><tr><td>🔗</td><td class='status success'>Good</td><td><a href='https://github.com/chiphuyen' target='_blank'>https://github.com/chiphuyen</a></td></tr><tr><td>🔗</td><td class='status error'>405</td><td><a href='https://www.linkedin.com/in/lexfridman/' target='_blank'>https://www.linkedin.com/in/lexfridman/</a></td></tr><tr><td>🔗</td><td class='status error'>403</td><td><a href='https://twitter.com/lexfridman' target='_blank'>https://twitter.com/lexfridman</a></td></tr><tr><td>🔗</td><td class='status error'>403</td><td><a href='https://twitter.com/karpathy' target='_blank'>https://twitter.com/karpathy</a></td></tr><tr><td>🔗</td><td class='status success'>Good</td><td><a href='https://github.com/karpathy' target='_blank'>https://github.com/karpathy</a></td></tr></table><h2><span class="file-path">../docs/open-source-models.md</span></h2><table><tr><th>Link Text</th><th class='status'>Status</th><th>URL</th></tr><tr><td>🏆 LMSYS Chatbot Arena Leaderboard</td><td class='status success'>Good</td><td><a href='https://huggingface.co/spaces/lmsys/chatbot-arena-leaderboard' target='_blank'>https://huggingface.co/spaces/lmsys/chatbot-arena-leaderboard</a></td></tr><tr><td>🤗 Open LLM Leaderboard</td><td class='status success'>Good</td><td><a href='https://huggingface.co/spaces/open-llm-leaderboard/open_llm_leaderboard' target='_blank'>https://huggingface.co/spaces/open-llm-leaderboard/open_llm_leaderboard</a></td></tr><tr><td>Meta Llama Series</td><td class='status success'>Good</td><td><a href='https://huggingface.co/meta-llama' target='_blank'>https://huggingface.co/meta-llama</a></td></tr><tr><td>Mistral AI</td><td class='status success'>Good</td><td><a href='https://huggingface.co/mistralai' target='_blank'>https://huggingface.co/mistralai</a></td></tr><tr><td>DeepSeek</td><td class='status success'>Good</td><td><a href='https://huggingface.co/deepseek-ai' target='_blank'>https://huggingface.co/deepseek-ai</a></td></tr><tr><td>Black Forest Labs Flux Series</td><td class='status success'>Good</td><td><a href='https://huggingface.co/black-forest-labs' target='_blank'>https://huggingface.co/black-forest-labs</a></td></tr></table><h2><span class="file-path">../docs/news-and-blogs.md</span></h2><table><tr><th>Link Text</th><th class='status'>Status</th><th>URL</th></tr><tr><td>AI News</td><td class='status success'>Good</td><td><a href='https://buttondown.com/ainews' target='_blank'>https://buttondown.com/ainews</a></td></tr><tr><td>Anthropic's News</td><td class='status success'>Good</td><td><a href='https://www.anthropic.com/news' target='_blank'>https://www.anthropic.com/news</a></td></tr><tr><td>OpenAI's Blog</td><td class='status error'>403</td><td><a href='https://www.openai.com/blog/' target='_blank'>https://www.openai.com/blog/</a></td></tr><tr><td>Meta AI's Blog</td><td class='status success'>Good</td><td><a href='https://ai.meta.com/blog/' target='_blank'>https://ai.meta.com/blog/</a></td></tr><tr><td>LinkedIn Engineering Blog</td><td class='status success'>Good</td><td><a href='https://www.linkedin.com/blog/engineering' target='_blank'>https://www.linkedin.com/blog/engineering</a></td></tr><tr><td>Hugginface Blog</td><td class='status success'>Good</td><td><a href='https://huggingface.co/blog' target='_blank'>https://huggingface.co/blog</a></td></tr><tr><td>Advancing AI for Humanity</td><td class='status success'>Good</td><td><a href='https://thegenerality.com/agi/index.html' target='_blank'>https://thegenerality.com/agi/index.html</a></td></tr></table>
+            <div class="timestamp">Report generated on 2024-08-30 16:01:04</div>
+        </div>
+    </body>
+    </html>
+    
